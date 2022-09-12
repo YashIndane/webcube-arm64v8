@@ -72,6 +72,11 @@ I have also uploded already build image for this webapp on Docker Hub -> [Link](
 $ sudo docker run --platform linux/arm64/v8 -dit -p <PORT>:85 --name <NAME> yashindane/webcube:linux-arm64v8
 ```
 
+## Running the container using podman
+```
+$ sudo podman run --platform linux/arm64/v8 -dit -p <PORT>:85 --name <NAME> docker.io/yashindane/webcube:linux-arm64v8
+```
+
 ## Deploying the image in Kubernetes
 
 create a deployment by ->
